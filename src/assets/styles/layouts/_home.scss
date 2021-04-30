@@ -1,0 +1,187 @@
+/*-----------------------------------------------------------------*/
+/*                      GLOBAL STYLES                              */
+/*-----------------------------------------------------------------*/
+body {
+  color: #1a1a1a;
+  font-family: $font-family-cv;
+  overflow-x: hidden;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-cv;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  padding-left: 15px;
+}
+
+li {
+  padding: 0 0 10px;
+}
+
+/*-----------------------------------------------------------------*/
+/*                      LAYOUT                                     */
+/*-----------------------------------------------------------------*/
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+section .info { 
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: minmax(300px, auto);
+   margin: 10px 0;
+}
+
+section .info .info__entradas { 
+  background-color: $band-corporate;
+  padding: 10%;
+  color: #fff;
+ }
+
+section .info .info__entradas a { 
+  background-color: #fff;
+  color: #267b98;
+  padding: 2px 5px;
+  font-size: 95%;
+}
+
+section .info .info__entradas ul {
+  margin: 0;
+  padding: 0;
+}
+
+section .info .info__entradas ul li {
+  list-style-type: none;
+}
+
+section .info .info__grupo { 
+  background: #0c0f04 url("/src/assets/images/guitarra_fondo_negro.jpg") right no-repeat;
+  background-size: contain;
+  padding: 5% 30% 5% 5%; color: #fff;
+  border-left: 10px solid #fff;
+  h2:after { content: ''; display: block; width: 10%; border-bottom: 4px solid #fff; padding-top: 15px; }
+}
+
+section .info .info__grupo a { 
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 10px 15px;
+  text-align: center;
+  color: #fff;
+  text-transform:uppercase;
+  margin-top: 15px; }
+
+
+.home__title{
+  color: $band-corporate;
+  text-shadow: 1px solid #fff;
+  margin-left: -2em;
+}
+
+.home__subtitle{
+  font-size: 2em;
+  font-weight: bold;
+}
+.info__comprar button{
+  margin-top: 2em;
+  padding: 20px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.poster {
+  margin:0 auto;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  padding:1rem;
+  }
+
+.poster__layout {
+    background-color:#fcf4e6;
+    padding:5vh 5vw;
+}
+
+.poster__logo {
+  grid-column:1/2;
+  grid-row:1/span 2;
+}
+
+.poster__logo img {
+border-left:8px solid $band-corporate;
+height: 100%;
+}
+
+.poster__title {
+  font-size: 10vw;
+  line-height: 1;
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+
+  .poster__concert {
+  background-color: $band-corporate;
+  padding: .5em;
+  font-size: 4.5vw;
+  line-height: 1.1;
+  grid-column: 1/4;
+  grid-row: 4/5;
+  align-self: start;
+ }
+
+ .poster__disco {
+  grid-column: 3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 2vw solid #fcf4e6;
+ }
+
+ .poster__soldout{
+  grid-column:1/2;
+  grid-row:5/6;
+  color:$band-corporate;
+  letter-spacing:0;
+  font-weight:800;
+  line-height:1;
+ }
+
+ .poster__soldout--big{
+   font-size: 5em;
+ }
+
+ .poster__lema {
+  grid-column:3/4;
+  display:flex;
+  flex-direction:column;
+  min-height: 60px;
+  padding-top: 2em;
+}
+ .poster__lema h4 { 
+ font-size: 1rem; 
+ font-weight:400;
+ line-height: 4; 
+ color:$band-corporate; 
+ }

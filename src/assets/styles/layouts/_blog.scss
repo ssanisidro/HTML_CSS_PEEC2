@@ -1,0 +1,87 @@
+.banner{
+    background-image: url('/src/assets/images/blogfoto.jpg');
+    padding: 120px 0;
+    color: #fff;
+    font-style: italic;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 50px;
+}
+
+.banner__title{
+    font-size: 45px;
+    color: #fff;
+    font-style: italic;
+}
+
+.banner__autor{
+    font-size: 21px;
+    margin-bottom: 40px;
+}
+
+.blog{
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+.blog__entrada{
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+
+.blog__parrafo{
+    font-size: 20px;
+    word-spacing: 1px;
+}
+
+
+.blog ol {
+    list-style: none;
+    counter-reset: steps;
+    padding: 50px 20px;
+    border-top: 1px solid $band-corporate;
+    border-bottom: 1px solid $band-corporate;
+    margin: 20px 10px;
+    
+}
+
+.blog ol li {
+    counter-increment: steps;
+}
+
+.blog ol li::before {
+    content: counter(steps);
+    margin-right: 0.5rem;
+    background: $band-corporate;
+    color: white;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    display: inline-grid;
+    place-items: center;
+    line-height: 1.2em;
+}
+
+.blog ol li p {
+    display: inline-block;
+}
+
+.blog__parrafo--title{
+    color: $band-corporate;
+    font-weight: 500;
+}
+
+.blog__parrafo--destacado{
+    font-size: 34px;
+    line-height: 1.2;
+    padding: 0 20px;
+    word-spacing: 5px;
+}
+
+.blog__imagen{
+    margin: 0 auto;
+}
